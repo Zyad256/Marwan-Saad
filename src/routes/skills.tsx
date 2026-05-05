@@ -5,12 +5,6 @@ import { PageShell } from "@/components/PageShell";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export const Route = createFileRoute("/skills")({
-  head: () => ({
-    meta: [
-      { title: "Skills — Network Security & Cisco | Marwan Saad" },
-      { name: "description", content: "Core skills: FortiGate, IPS, VPN, OSPF, EIGRP, ACLs, HSRP, Wireshark, Nmap, Burp Suite, Kali, GNS3." },
-    ],
-  }),
   component: SkillsPage,
 });
 
@@ -107,6 +101,37 @@ function SkillsPage() {
             </div>
           </motion.div>
         ))}
+      </div>
+
+      <SectionHeading
+        tag="certifications"
+        title="Certifications & Credentials"
+        description="Official verifications of my technical capabilities."
+        icon={<Shield className="h-3.5 w-3.5" />}
+      />
+      <div className="grid md:grid-cols-2 gap-5 mt-8">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="panel p-6 flex flex-col items-center text-center justify-center border-primary/20 hover:border-primary/50 transition-colors"
+        >
+          <div className="h-16 w-16 mb-4 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary glow-cyber">
+            <Shield className="h-8 w-8" />
+          </div>
+          <h3 className="text-xl font-bold">Fortinet Certified</h3>
+          <p className="text-muted-foreground mt-2 mb-6">Fortinet Score Report Validated</p>
+          <a
+            href="/Certificates/scorereportFortinet.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-md px-6 py-2.5 font-mono text-sm text-primary-foreground transition-transform hover:-translate-y-0.5"
+            style={{ background: "var(--gradient-cyber)" }}
+          >
+            View Certificate
+          </a>
+        </motion.div>
       </div>
     </PageShell>
   );

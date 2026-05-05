@@ -6,12 +6,6 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Terminal, Line } from "@/components/Terminal";
 
 export const Route = createFileRoute("/labs")({
-  head: () => ({
-    meta: [
-      { title: "SOC Labs — Security Operations Lab Environment | Marwan Saad" },
-      { name: "description", content: "Security Operations Lab Environment — IPsec VPN, SSL VPN, firewall design, traffic analysis, IPS simulations, troubleshooting." },
-    ],
-  }),
   component: LabsPage,
 });
 

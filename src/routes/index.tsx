@@ -9,12 +9,6 @@ import { Terminal, Line } from "@/components/Terminal";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Marwan Saad — Network Security Engineer | SOC Portfolio" },
-      { name: "description", content: "Enterprise-grade portfolio of Marwan Saad Abd Elsbour — Network Security Engineer (Fortinet, Cisco, CCNP Security, SOC labs)." },
-    ],
-  }),
   component: Home,
 });
 

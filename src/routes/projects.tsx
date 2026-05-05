@@ -6,12 +6,6 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Terminal, Line } from "@/components/Terminal";
 
 export const Route = createFileRoute("/projects")({
-  head: () => ({
-    meta: [
-      { title: "Projects — Hotel Network Capstone | Marwan Saad" },
-      { name: "description", content: "Engineering case studies — hotel network with VLANs, OSPF/EIGRP redistribution, IPsec VPN, HSRP and port channels." },
-    ],
-  }),
   component: ProjectsPage,
 });
 

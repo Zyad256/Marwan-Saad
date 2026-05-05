@@ -6,12 +6,6 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Terminal, Line } from "@/components/Terminal";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Marwan Saad | Network Security Engineer" },
-      { name: "description", content: "Get in touch with Marwan Saad — LinkedIn, email, GitHub. Open to SOC, NetSec, and CCNP Security roles." },
-    ],
-  }),
   component: ContactPage,
 });
 
