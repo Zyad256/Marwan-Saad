@@ -98,7 +98,7 @@ function Home() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="lg:col-span-2 panel p-5 flex flex-col"
+          className="lg:col-span-2 panel p-5 flex flex-col min-w-0"
         >
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground">

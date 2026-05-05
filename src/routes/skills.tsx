@@ -109,29 +109,38 @@ function SkillsPage() {
         description="Official verifications of my technical capabilities."
         icon={<Shield className="h-3.5 w-3.5" />}
       />
-      <div className="grid md:grid-cols-2 gap-5 mt-8">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
-          className="panel p-6 flex flex-col items-center text-center justify-center border-primary/20 hover:border-primary/50 transition-colors"
-        >
-          <div className="h-16 w-16 mb-4 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary glow-cyber">
-            <Shield className="h-8 w-8" />
-          </div>
-          <h3 className="text-xl font-bold">Fortinet Certified</h3>
-          <p className="text-muted-foreground mt-2 mb-6">Fortinet Score Report Validated</p>
-          <a
-            href="/Certificates/scorereportFortinet.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md px-6 py-2.5 font-mono text-sm text-primary-foreground transition-transform hover:-translate-y-0.5"
-            style={{ background: "var(--gradient-cyber)" }}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+        {[
+          { name: "Fortinet Cybersecurity — NTI", image: "/Certificates/Fortinet Cybersecurity NTI.png" },
+          { name: "Infrastructure & Security — Cisco DEPI", image: "/Certificates/Infrastructure & Security – Cisco Network Administrator DEPI.png" },
+          { name: "IBM SkillsBuild Cybersecurity", image: "/Certificates/ibm skillsbuild cybersecurity.png" },
+          { name: "Fortinet Score Report", image: "/Certificates/scorereportFortinet.png" },
+          { name: "Machine Learning — Coursera", image: "/Certificates/machine learning coursera.jpeg" },
+        ].map((c, i) => (
+          <motion.div
+            key={c.name}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: i * 0.07 }}
+            className="panel overflow-hidden hover:border-primary/50 transition-colors group"
           >
-            View Certificate
-          </a>
-        </motion.div>
+            <div className="relative aspect-[4/3] bg-background/40 overflow-hidden">
+              <img
+                src={c.image}
+                alt={c.name}
+                className="w-full h-full object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-4">
+              <div className="font-semibold leading-snug text-sm">{c.name}</div>
+              <div className="mt-2 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-widest uppercase rounded-full px-2 py-0.5 border border-accent/40 bg-accent/10 text-accent">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                issued
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </PageShell>
   );

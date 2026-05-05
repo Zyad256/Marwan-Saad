@@ -48,9 +48,12 @@ const timeline = [
 ];
 
 const certs = [
-  { name: "Fortinet FCP — FortiGate 7.4 Administrator", status: "issued", icon: ShieldCheck },
-  { name: "IBM SkillsBuild Cybersecurity Certificate", status: "issued", icon: Award },
-  { name: "CCNP Security", status: "in_progress", icon: ShieldCheck },
+  { name: "Fortinet Cybersecurity — NTI", status: "issued", image: "/Certificates/Fortinet Cybersecurity NTI.png" },
+  { name: "Infrastructure & Security — Cisco DEPI", status: "issued", image: "/Certificates/Infrastructure & Security – Cisco Network Administrator DEPI.png" },
+  { name: "IBM SkillsBuild Cybersecurity", status: "issued", image: "/Certificates/ibm skillsbuild cybersecurity.png" },
+  { name: "Fortinet Score Report", status: "issued", image: "/Certificates/scorereportFortinet.png" },
+  { name: "Machine Learning — Coursera", status: "issued", image: "/Certificates/machine learning coursera.jpeg" },
+  { name: "CCNP Security", status: "in_progress", image: null },
 ];
 
 function AboutPage() {
@@ -63,8 +66,8 @@ function AboutPage() {
         icon={<TerminalIcon className="h-3.5 w-3.5" />}
       />
 
-      <div className="grid lg:grid-cols-2 gap-6">
-        <div className="panel p-6">
+      <div className="grid lg:grid-cols-2 gap-6 min-w-0">
+        <div className="panel p-6 min-w-0">
           <h3 className="text-xl font-semibold">Marwan Saad Abd Elsbour</h3>
           <p className="mt-3 text-muted-foreground">
             A passionate Computer Science student with hands-on experience in networking and cybersecurity. 
@@ -159,22 +162,33 @@ function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.07 }}
-              className="panel p-5 hover:border-primary/50 transition-colors"
+              className="panel overflow-hidden hover:border-primary/50 transition-colors group"
             >
-              <div className="flex items-start gap-3">
-                <div className="h-10 w-10 rounded-md border border-primary/40 bg-primary/10 flex items-center justify-center text-primary">
-                  <c.icon className="h-5 w-5" />
+              {c.image ? (
+                <div className="relative aspect-[4/3] bg-background/40 overflow-hidden">
+                  <img
+                    src={c.image}
+                    alt={c.name}
+                    className="w-full h-full object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
-                <div className="flex-1">
-                  <div className="font-semibold leading-snug">{c.name}</div>
-                  <div className={`mt-2 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-widest uppercase rounded-full px-2 py-0.5 border ${
-                    c.status === "issued"
-                      ? "border-accent/40 bg-accent/10 text-accent"
-                      : "border-warn/40 bg-warn/10 text-warn"
-                  }`}>
-                    <span className={`h-1.5 w-1.5 rounded-full ${c.status === "issued" ? "bg-accent" : "bg-warn pulse-dot"}`} />
-                    {c.status}
+              ) : (
+                <div className="aspect-[4/3] bg-background/40 flex items-center justify-center">
+                  <div className="text-center">
+                    <ShieldCheck className="h-12 w-12 text-warn/60 mx-auto mb-2" />
+                    <span className="font-mono text-xs text-warn">In Progress</span>
                   </div>
+                </div>
+              )}
+              <div className="p-4">
+                <div className="font-semibold leading-snug text-sm">{c.name}</div>
+                <div className={`mt-2 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-widest uppercase rounded-full px-2 py-0.5 border ${
+                  c.status === "issued"
+                    ? "border-accent/40 bg-accent/10 text-accent"
+                    : "border-warn/40 bg-warn/10 text-warn"
+                }`}>
+                  <span className={`h-1.5 w-1.5 rounded-full ${c.status === "issued" ? "bg-accent" : "bg-warn pulse-dot"}`} />
+                  {c.status}
                 </div>
               </div>
             </motion.div>

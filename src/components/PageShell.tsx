@@ -5,7 +5,7 @@ import { CyberFooter } from "./CyberFooter";
 
 export function PageShell({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-x-hidden">
       <CyberHeader />
       <motion.main
         initial={{ opacity: 0, y: 8 }}

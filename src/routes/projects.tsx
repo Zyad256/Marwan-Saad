@@ -59,7 +59,7 @@ function ProjectsPage() {
 
           {/* Topology placeholder */}
           <div className="mt-6 grid lg:grid-cols-5 gap-5">
-            <div className="lg:col-span-3 panel p-5">
+            <div className="lg:col-span-3 panel p-5 min-w-0">
               <div className="flex items-center justify-between mb-3">
                 <div className="font-mono text-[11px] text-primary">[topology.diagram]</div>
                 <div className="font-mono text-[10px] text-muted-foreground">layer-3 view</div>
@@ -102,7 +102,7 @@ function ProjectsPage() {
           </div>
 
           {/* Sample config */}
-          <div className="mt-6">
+          <div className="mt-6 min-w-0">
             <Terminal title="HQ-Core# show running-config | section ospf">
               <Line user="HQ-Core#">router ospf 10</Line>
               <Line user=" "> router-id 1.1.1.1</Line>

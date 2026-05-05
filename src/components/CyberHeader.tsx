@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Shield } from "lucide-react";
+import { Shield, Menu, X } from "lucide-react";
 
 const nav = [
   { to: "/", label: "// home" },
@@ -11,6 +12,8 @@ const nav = [
 ] as const;
 
 export function CyberHeader() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
@@ -40,7 +43,33 @@ export function CyberHeader() {
           <span className="h-2 w-2 rounded-full bg-accent pulse-dot" />
           <span className="text-accent">SYSTEM ONLINE</span>
         </div>
+        <button
+          aria-label="Menu"
+          className="md:hidden p-2 text-foreground"
+          onClick={() => setOpen((v) => !v)}
+        >
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
       </div>
+      {open && (
+        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur">
+          <ul className="px-6 py-3 flex flex-col gap-1 font-mono text-sm">
+            {nav.map((n) => (
+              <li key={n.to}>
+                <Link
+                  to={n.to}
+                  onClick={() => setOpen(false)}
+                  className="block px-3 py-2 rounded-md text-muted-foreground hover:text-primary hover:bg-primary/5 transition-colors"
+                  activeProps={{ className: "block px-3 py-2 rounded-md text-primary bg-primary/10" }}
+                  activeOptions={{ exact: true }}
+                >
+                  {n.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </header>
   );
 }
