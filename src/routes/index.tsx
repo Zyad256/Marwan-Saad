@@ -83,7 +83,7 @@ function Home() {
                 <Mail className="h-4 w-4" /> contact.sh
               </Link>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/marwan-saad-8.../"
                 target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 font-mono text-sm hover:border-primary/40 hover:text-primary transition-colors"
               >
@@ -201,12 +201,12 @@ function Home() {
             Let's design the secure infrastructure your team deserves. Reach out for SOC, NetSec, or CCNP Security roles.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+            <a href="https://www.linkedin.com/in/marwan-saad-8.../" target="_blank" rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md px-6 py-3 font-mono text-sm text-primary-foreground glow-cyber"
               style={{ background: "var(--gradient-cyber)" }}>
               <Linkedin className="h-4 w-4" /> Connect on LinkedIn
             </a>
-            <a href="mailto:marwan@example.com" className="inline-flex items-center gap-2 rounded-md border border-primary/40 px-6 py-3 font-mono text-sm text-primary hover:bg-primary/10 transition-colors">
+            <a href="mailto:marwansaad12@gmail.com" className="inline-flex items-center gap-2 rounded-md border border-primary/40 px-6 py-3 font-mono text-sm text-primary hover:bg-primary/10 transition-colors">
               <Mail className="h-4 w-4" /> Email
             </a>
             <a href="https://github.com/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3 font-mono text-sm hover:border-primary/40 hover:text-primary transition-colors">

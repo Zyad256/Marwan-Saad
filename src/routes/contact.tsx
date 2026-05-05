@@ -22,7 +22,7 @@ function ContactPage() {
       <div className="grid lg:grid-cols-5 gap-6">
         {/* LinkedIn primary */}
         <motion.a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/marwan-saad-8.../"
           target="_blank" rel="noreferrer"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ function ContactPage() {
 
         <div className="lg:col-span-2 grid gap-3">
           {[
-            { icon: Mail, label: "Email", value: "marwan.saad@example.com", href: "mailto:marwan.saad@example.com" },
+            { icon: Mail, label: "Email", value: "marwansaad12@gmail.com", href: "mailto:marwansaad12@gmail.com" },
             { icon: Github, label: "GitHub", value: "@marwan-saad", href: "https://github.com/" },
             { icon: MapPin, label: "Location", value: "Giza, Egypt", href: "#" },
           ].map((c, i) => (

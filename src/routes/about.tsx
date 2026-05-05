@@ -11,37 +11,37 @@ export const Route = createFileRoute("/about")({
 
 const timeline = [
   {
-    org: "NTI",
+    org: "NTI (Remotely)",
     title: "Fortinet Security Training",
+    date: "Aug 2025 – Nov 2025",
     icon: ShieldCheck,
     points: [
-      "FortiGate firewall configuration (FortiOS 7.4)",
-      "VPN setup — IPsec & SSL VPN",
-      "IPS and threat management",
-      "Traffic monitoring, logs & forensic review",
+      "FortiGate firewall basics, Policy configuration, VPNs",
+      "Threat management, Intrusion prevention systems (IPS)",
+      "Web filtering, antivirus, and application control",
     ],
     tag: "FORTINET",
   },
   {
-    org: "DEPI",
+    org: "DEPI (Cairo)",
     title: "Network Administration",
+    date: "Jul 2024 – Oct 2024",
     icon: Network,
     points: [
-      "Enterprise network design",
-      "VLANs and inter-VLAN routing",
-      "OSPF / EIGRP implementation",
-      "ACLs and security hardening",
+      "Intensive training in network infrastructure, routing & switching, firewall configuration, and cybersecurity fundamentals.",
+      "Hands-on experience with Cisco devices, Fortinet security appliances, and real-world network topologies.",
+      "Practical experience in VLANs, NAT, DHCP, OSPF, EIGRP, ACLs, VPNs, and network troubleshooting.",
     ],
     tag: "CISCO",
   },
   {
-    org: "Self-Directed",
-    title: "Computer Science · Networking & Security",
+    org: "Menoufia University",
+    title: "B.Sc. Computer Science",
+    date: "Sep 2022 – Jul 2026",
     icon: GraduationCap,
     points: [
-      "Hands-on labs in GNS3 / EVE-NG / Packet Tracer",
-      "SOC workflow practice with Wireshark, Nmap, Burp",
-      "Currently pursuing CCNP Security",
+      "Student of Computer Science IT department",
+      "Grade: 3.3 GPA",
     ],
     tag: "ACADEMIC",
   },
@@ -49,7 +49,7 @@ const timeline = [
 
 const certs = [
   { name: "Fortinet FCP — FortiGate 7.4 Administrator", status: "issued", icon: ShieldCheck },
-  { name: "IBM Cybersecurity Certificate", status: "issued", icon: Award },
+  { name: "IBM SkillsBuild Cybersecurity Certificate", status: "issued", icon: Award },
   { name: "CCNP Security", status: "in_progress", icon: ShieldCheck },
 ];
 
@@ -67,15 +67,11 @@ function AboutPage() {
         <div className="panel p-6">
           <h3 className="text-xl font-semibold">Marwan Saad Abd Elsbour</h3>
           <p className="mt-3 text-muted-foreground">
-            Computer Science student with a deep focus on networking and security.
-            I design and defend enterprise networks using Fortinet and Cisco
-            technologies — from VLAN segmentation and dynamic routing to IPS
-            tuning, VPN deployment, and SOC-style log analysis.
+            A passionate Computer Science student with hands-on experience in networking and cybersecurity. 
+            Have improved practical skills through real-world college projects, DEPI internal scholarship training, and online certifications.
           </p>
           <p className="mt-3 text-muted-foreground">
-            My passion is secure infrastructure design — building networks that
-            stay fast, observable, and resilient under attack. I'm currently
-            sharpening that further with the CCNP Security track.
+            Motivated about network management, secure systems design, and mobile/web application development using modern technologies.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             {["FortiGate 7.4", "Cisco IOS", "OSPF", "EIGRP", "IPsec", "SSL VPN", "IPS", "Wireshark", "GNS3", "Kali"].map((t) => (
@@ -127,7 +123,9 @@ function AboutPage() {
                     <div>
                       <div className="font-mono text-[11px] text-primary">[{t.tag}]</div>
                       <h4 className="text-lg font-semibold">{t.title}</h4>
-                      <div className="text-sm text-muted-foreground">{t.org}</div>
+                      <div className="text-sm text-muted-foreground">
+                        {t.org} {t.date && <span className="opacity-60">• {t.date}</span>}
+                      </div>
                     </div>
                   </div>
                   <ul className="mt-3 space-y-1.5 text-sm">
