@@ -1,0 +1,18 @@
+import { Link } from "@tanstack/react-router";
+
+export function CyberFooter() {
+  return (
+    <footer className="border-t border-border/60 mt-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-muted-foreground">
+        <div>
+          <span className="text-primary">$</span> echo "© {new Date().getFullYear()} Marwan Saad Abd Elsbour"
+        </div>
+        <div className="flex items-center gap-4">
+          <Link to="/contact" className="hover:text-primary transition-colors">contact.sh</Link>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">linkedin</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">github</a>
+        </div>
+      </div>
+    </footer>
+  );
+}
