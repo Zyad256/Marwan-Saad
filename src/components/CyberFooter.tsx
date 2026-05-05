@@ -8,7 +8,7 @@ export function CyberFooter() {
         <div className="flex items-center gap-4">
           <a href="#contact" className="hover:text-primary transition-colors">contact.sh</a>
           <a href="https://www.linkedin.com/in/marwan-saad-35b5012a5" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">linkedin</a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">github</a>
+          <a href="https://github.com/marwan-s8" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">github</a>
         </div>
       </div>
     </footer>

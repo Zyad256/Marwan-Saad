@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, MapPin, Send, Lock } from "lucide-react";
+import { Mail, Linkedin, Github, MapPin, Send, Lock, Phone } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Terminal, Line } from "@/components/Terminal";
 
@@ -30,7 +30,8 @@ export function ContactSection() {
           <div className="lg:col-span-2 grid gap-3">
             {[
               { icon: Mail, label: "Email", value: "marwansaad12@gmail.com", href: "mailto:marwansaad12@gmail.com" },
-              { icon: Github, label: "GitHub", value: "@marwan-saad", href: "https://github.com/" },
+              { icon: Phone, label: "Phone", value: "+201148649274", href: "tel:+201148649274" },
+              { icon: Github, label: "GitHub", value: "@marwan-saad", href: "https://github.com/marwan-s8" },
               { icon: MapPin, label: "Location", value: "Giza, Egypt", href: "#" },
             ].map((c, i) => (
               <motion.a key={c.label} href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" initial={{ opacity: 0, x: 16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="panel p-4 flex items-center gap-4 hover:border-primary/50 transition-colors">

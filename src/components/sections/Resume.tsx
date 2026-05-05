@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 const items = [
   { y: "Aug 2025 – Nov 2025", t: "Fortinet Security Training", d: "NTI (Remotely). FortiGate firewall, VPNs, IPS, web filtering, antivirus, and application control." },
+  { y: "Self-paced, 2025", t: "IBM SkillsBuild Cybersecurity", d: "60-hour intensive training covering Risk & compliance, Vulnerabilities, Network & cloud security, Security ops, and Incident response." },
   { y: "Jul 2024 – Oct 2024", t: "Network Administration — DEPI", d: "Cisco devices, Fortinet appliances, VLANs, NAT, DHCP, OSPF, EIGRP, ACLs, VPNs." },
   { y: "Sep 2022 – Jul 2026", t: "B.Sc. Computer Science", d: "Menoufia University — IT Department. Grade: 3.3 GPA." },
 ];
@@ -43,7 +44,8 @@ export function ResumeSection() {
             <h3 className="font-semibold">Full CV</h3>
             <p className="text-xs text-muted-foreground mt-1 mb-4">PDF · 2 page · ATS-friendly</p>
             <a
-              href={`${import.meta.env.BASE_URL}cv.pdf`}
+              href="/cv.pdf"
+              download="Marwan_Saad_CV.pdf"
               target="_blank"
               rel="noreferrer"
               className="px-5 py-2.5 rounded-md font-medium text-sm text-primary-foreground hover:opacity-90 transition w-full inline-flex items-center justify-center gap-2 glow-cyber"

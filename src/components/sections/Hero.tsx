@@ -72,7 +72,7 @@ export function HeroSection() {
                 <a href="https://www.linkedin.com/in/marwan-saad-35b5012a5" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 font-mono text-sm hover:border-primary/40 hover:text-primary transition-colors">
                   <Linkedin className="h-4 w-4" /> LinkedIn
                 </a>
-                <a href={`${import.meta.env.BASE_URL}cv.pdf`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 font-mono text-sm hover:border-primary/40 hover:text-primary transition-colors">
+                <a href="/cv.pdf" download="Marwan_Saad_CV.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-accent/40 bg-accent/10 px-5 py-2.5 font-mono text-sm text-accent hover:bg-accent/20 hover:-translate-y-0.5 transition-all">
                   <FileText className="h-4 w-4" /> Download CV
                 </a>
               </div>

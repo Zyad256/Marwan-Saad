@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import { Shield, Network, Wrench, Cpu } from "lucide-react";
+import { Shield, Network, Wrench, Cpu, Code } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 
 const groups = [
   { icon: Shield, title: "Network Security", accent: "primary", skills: [{ name: "FortiGate / FortiOS 7.4", level: 92 }, { name: "Security Policies & NAT", level: 90 }, { name: "VPN — IPsec & SSL VPN", level: 88 }, { name: "IPS / Threat Prevention", level: 85 }, { name: "Web Filtering & App Control", level: 82 }, { name: "Log Analysis & Traffic Monitoring", level: 86 }] },
   { icon: Network, title: "Networking", accent: "primary", skills: [{ name: "VLANs & Inter-VLAN Routing", level: 92 }, { name: "OSPF, EIGRP, Redistribution", level: 88 }, { name: "ACLs, NAT, PAT", level: 90 }, { name: "HSRP & Port Channels", level: 84 }, { name: "DHCP & Routing Protocols", level: 88 }] },
   { icon: Wrench, title: "Security Tools", accent: "matrix", skills: [{ name: "Wireshark", level: 90 }, { name: "Nmap", level: 86 }, { name: "Burp Suite", level: 78 }, { name: "Kali Linux", level: 82 }, { name: "Cisco Packet Tracer", level: 92 }, { name: "GNS3 / EVE-NG", level: 88 }] },
+  { icon: Code, title: "Software Dev", accent: "primary", skills: [{ name: "C++, Kotlin, Python", level: 85 }, { name: "HTML, CSS, JS", level: 88 }, { name: "SQL & T-SQL", level: 82 }, { name: "SQL Server", level: 80 }, { name: "Android Studio", level: 85 }, { name: "Git / GitHub", level: 90 }] },
 ];
 
 export function SkillsSection() {
@@ -13,7 +14,7 @@ export function SkillsSection() {
     <section id="skills" className="py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <SectionHeading tag="skills.matrix" title="Skill Matrix" description="Hands-on competencies validated through labs, training, and capstone projects." icon={<Cpu className="h-3.5 w-3.5" />} />
-        <div className="grid lg:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {groups.map((g, gi) => (
             <motion.div key={g.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: gi * 0.08 }} className="panel p-6">
               <div className="flex items-center gap-3 mb-5">

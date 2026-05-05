@@ -39,6 +39,8 @@ export function AboutSection() {
             <Line user=">">focus: [SOC, NetSec, FortiGate, Cisco]</Line>
             <Line user=">">training: [DEPI, NTI]</Line>
             <Line user=">">cert_in_progress: CCNP_Security</Line>
+            <Line user=">">soft_skills: [Problem Solving, Teamwork, Adaptability]</Line>
+            <Line user=">">languages: [Arabic, English (B2)]</Line>
             <Line user="$">echo $MISSION</Line>
             <Line user=">"><span className="text-accent">"design, secure, and optimize"</span></Line>
             <Line user="$"><span className="blink">▌</span></Line>
