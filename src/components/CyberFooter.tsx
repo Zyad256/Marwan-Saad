@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 export function CyberFooter() {
   return (
     <footer className="border-t border-border/60 mt-24">
@@ -8,8 +6,8 @@ export function CyberFooter() {
           <span className="text-primary">$</span> echo "© {new Date().getFullYear()} Marwan Saad Abd Elsbour"
         </div>
         <div className="flex items-center gap-4">
-          <Link to="/contact" className="hover:text-primary transition-colors">contact.sh</Link>
-          <a href="https://www.linkedin.com/in/marwan-saad-8.../" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">linkedin</a>
+          <a href="#contact" className="hover:text-primary transition-colors">contact.sh</a>
+          <a href="https://www.linkedin.com/in/marwan-saad-35b5012a5" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">linkedin</a>
           <a href="https://github.com/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">github</a>
         </div>
       </div>
