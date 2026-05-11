@@ -1,227 +1,121 @@
 <div align="center">
 
-# 🛡️ Marwan Saad — Network Security Engineer
+# 🛡️ Marwan Saad Abd Elsbour
 
-### A high-performance, single-page portfolio built with React, Vite & Tailwind CSS
+### Network Security Engineer
 
-[![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-**[🔗 Live Demo](#) · [📄 Download CV](public/cv.pdf) · [💼 LinkedIn](https://www.linkedin.com/in/marwan-saad-35b5012a5)**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marwan-saad-35b5012a5)
+[![Email](https://img.shields.io/badge/Email-marwansaad12%40gmail.com-EA4335?logo=gmail&logoColor=white)](mailto:marwansaad12@gmail.com)
+[![Phone](https://img.shields.io/badge/Phone-%2B201148649274-25D366?logo=whatsapp&logoColor=white)](tel:+201148649274)
+[![Location](https://img.shields.io/badge/Location-Giza%2C%20Egypt-FF6F61)](#)
 
 </div>
 
 ---
 
-## ✨ Overview
+## 👋 About Me
 
-A sleek, cyber-themed portfolio showcasing expertise in **network security**, **Fortinet technologies**, and **enterprise infrastructure design**. Built as a single-page scrollable app with a "SOC dashboard" aesthetic — dark backgrounds, neon cyan/green accents, animated network topologies, and terminal-style UI components.
+A passionate **Computer Science** student at Menoufia University (GPA 3.3) with hands-on experience in **networking** and **cybersecurity**. I've sharpened my practical skills through real-world college projects, the **DEPI** internal scholarship training, and online certifications. I'm driven by a deep interest in network management, secure systems design, and emerging technologies.
 
----
-
-## 🖼️ Features
-
-| Feature | Description |
-|---------|-------------|
-| 🎨 **Cyber Dark Theme** | Custom oklch color palette with neon cyan/green accents and grid background |
-| 🖥️ **Live Terminal UI** | Interactive terminal components displaying FortiOS & Cisco CLI output |
-| 🌐 **Animated Network Topology** | SVG topology diagram with glowing packet dots traveling along network lines |
-| ✨ **CSS Animations** | Sweep scanlines, glow pulses, floating particles, shimmer dividers |
-| 📱 **Fully Responsive** | Mobile hamburger menu, flexible grids, `min-w-0` overflow protection |
-| 🔍 **SEO Optimized** | Full Open Graph, Twitter Card, and meta tag integration |
-| 📄 **CV Download** | Direct PDF download from Hero and Resume sections |
-| 🏅 **Certificate Gallery** | Image-based certification cards with hover-zoom effects |
+> *"Designing, securing, and optimizing enterprise networks — one packet at a time."*
 
 ---
 
-## 🏗️ Architecture
+## 🎓 Education
 
-```
-Marwan-Saad/
-├── public/
-│   ├── Certificates/          # Certificate screenshot images
-│   ├── cv.pdf                 # Downloadable CV
-│   └── personalImage.png      # Profile photo
-├── src/
-│   ├── components/
-│   │   ├── sections/          # All page sections
-│   │   │   ├── Hero.tsx       # Landing with terminal & stats
-│   │   │   ├── About.tsx      # Profile, experience timeline
-│   │   │   ├── Skills.tsx     # 4-column skill matrix with progress bars
-│   │   │   ├── Projects.tsx   # Hotel network case study + topology
-│   │   │   ├── Labs.tsx       # SOC & security lab scenarios
-│   │   │   ├── Certifications.tsx  # Certificate image cards
-│   │   │   ├── Resume.tsx     # Experience snapshot + CV download
-│   │   │   └── Contact.tsx    # Contact grid + LinkedIn CTA
-│   │   ├── Navbar.tsx         # Scroll-spy sticky navigation
-│   │   ├── CyberFooter.tsx    # Footer with quick links
-│   │   ├── SectionHeading.tsx # Reusable section header
-│   │   └── Terminal.tsx       # Terminal UI component
-│   ├── lib/
-│   │   └── utils.ts           # Utility functions
-│   ├── App.tsx                # Main SPA layout with shimmer dividers
-│   ├── main.tsx               # React entry point
-│   └── styles.css             # Design tokens, animations, keyframes
-├── index.html                 # SEO metadata & OG tags
-├── vite.config.ts             # Vite configuration
-├── tsconfig.json              # TypeScript config
-└── package.json               # Dependencies & scripts
-```
+| Institution | Degree | Period | Grade |
+|-------------|--------|--------|-------|
+| **Menoufia University** | B.Sc. Computer Science — IT Department | Sep 2022 – Jul 2026 | 3.3 GPA |
 
 ---
 
-## 🚀 Quick Start
+## 💼 Experience
 
-### Prerequisites
+### 🔒 National Telecommunication Institute (NTI) — *Fortinet Security*
+**Aug 2025 – Nov 2025** · Remote
 
-- **Node.js** ≥ 18
-- **npm** ≥ 9
+- FortiGate firewall basics & policy configuration
+- VPN technologies (IPsec, SSL VPN)
+- Threat management & Intrusion Prevention Systems (IPS)
+- Web filtering, antivirus, and application control
 
-### Installation
+### 🌐 Egypt Digital Pioneers Initiative (DEPI) — *Network Administration*
+**Jul 2024 – Oct 2024** · Cairo
 
-```bash
-# Clone the repository
-git clone https://github.com/marwan-saad/portfolio.git
-cd portfolio
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
-The app will be available at **http://localhost:8080**
-
-### Build for Production
-
-```bash
-# Create optimized production build
-npm run build
-
-# Preview the production build
-npm run preview
-```
+- Intensive training in network infrastructure, routing & switching, firewall configuration, and cybersecurity fundamentals
+- Hands-on experience with Cisco devices, Fortinet security appliances, and real-world network topologies
+- Practical experience in VLANs, NAT, DHCP, OSPF, EIGRP, ACLs, VPNs, and network troubleshooting
 
 ---
 
-## 🎨 Design System
+## 🛠️ Skills
 
-### Color Palette
+### Network Security
+`FortiGate / FortiOS 7.4` · `Security Policy Management & NAT` · `VPN (IPsec, SSL VPN)` · `IPS` · `Network Traffic Analysis & Log Monitoring`
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--primary` | `oklch(0.82 0.17 195)` | Neon cyan — headings, accents, borders |
-| `--accent` | `oklch(0.85 0.20 145)` | Neon green — status badges, highlights |
-| `--background` | `oklch(0.16 0.02 240)` | Deep navy — page background |
-| `--muted-foreground` | `oklch(0.68 0.02 230)` | Subdued text — descriptions, labels |
-| `--warn` | `oklch(0.82 0.17 75)` | Amber — alert indicators |
-| `--gradient-cyber` | `primary → accent` | CTA buttons, glowing elements |
+### Networking
+`Routing & Switching` · `VLANs & Inter-VLAN Routing` · `OSPF` · `EIGRP` · `ACLs` · `HSRP` · `Port Channels` · `DHCP` · `NAT/PAT`
 
-### Animations
+### Security Tools
+`Wireshark` · `Nmap` · `Burp Suite` · `Kali Linux` · `Cisco Packet Tracer` · `GNS3 / EVE-NG`
 
-| Animation | Class | Description |
-|-----------|-------|-------------|
-| Sweep Scanline | `.sweep-line` | Horizontal light beam scanning the Hero |
-| Glow Pulse | `.glow-pulse` | Breathing neon glow on stat numbers |
-| Shimmer Divider | `.shimmer-line` | Flowing gradient line between sections |
-| Float Up | `float-up` | Particle dots drifting upward |
-| Network Packets | SVG `<animate>` | Dots traveling along topology lines |
+### Programming & Development
+`C++` · `Python` · `Kotlin` · `HTML/CSS/JS` · `Transact-SQL` · `Android Studio` · `SQL Server` · `Git/GitHub`
 
-### Typography
-
-| Font | Usage |
-|------|-------|
-| **Space Grotesk** | Display headings, body text |
-| **JetBrains Mono** | Terminal UI, code snippets, labels |
+### Soft Skills
+`Problem Solving` · `Teamwork` · `Communication` · `Adaptability` · `Attention to Detail` · `Time Management`
 
 ---
 
-## 📑 Sections Breakdown
+## 🏅 Certifications
 
-### 1. Hero (`#home`)
-Full-width landing with animated terminal showing FortiOS CLI output, quick stats (FortiOS 7.4, 12+ Protocols, 20+ Labs, 99.9% Uptime), and CTA buttons for Projects, Contact, LinkedIn, and CV download.
-
-### 2. About (`#about`)
-Professional summary with experience timeline covering NTI Fortinet training, DEPI Network Administration, and Menoufia University. Includes an interactive YAML-style terminal profile.
-
-### 3. Skills (`#skills`)
-Four-column skill matrix with animated progress bars:
-- **Network Security** — FortiGate, IPS, VPN, NAT
-- **Networking** — VLANs, OSPF, EIGRP, HSRP
-- **Security Tools** — Wireshark, Nmap, Burp Suite, Kali
-- **Software Dev** — C++, Python, Kotlin, SQL
-
-### 4. Projects (`#projects`)
-Detailed case study of the **Hotel Network Infrastructure** capstone project featuring an animated SVG topology diagram with live packet simulation, PSIR methodology cards, and CLI configuration snippets.
-
-### 5. Labs (`#labs`)
-Hands-on security lab scenarios covering VLAN segmentation, OSPF multi-area routing, ACL hardening, IPsec VPN tunnels, and HSRP failover testing.
-
-### 6. Certifications (`#certifications`)
-Visual certificate gallery displaying Fortinet FCP, IBM SkillsBuild Cybersecurity, DEPI Cisco Network Administrator, and Coursera Machine Learning credentials.
-
-### 7. Resume (`#resume`)
-Experience snapshot with download CTA linking directly to the PDF CV.
-
-### 8. Contact (`#contact`)
-Contact grid with LinkedIn priority CTA, email, phone, GitHub, and location. Includes a terminal-style contact JSON snippet.
+| Certificate | Issuer | Highlights |
+|------------|--------|------------|
+| **FCP – FortiGate 7.4 Administrator** | Fortinet | Firewall administration, security policies, IPsec/SSL VPNs, traffic monitoring, threat investigation |
+| **IBM SkillsBuild Cybersecurity** | IBM | 60-hour training — Risk & compliance, vulnerability assessment, network & cloud security, incident response |
+| **Infrastructure & Security – Cisco Network Administrator** | DEPI | Cisco device configuration, Fortinet appliances, enterprise network design |
 
 ---
 
-## 🛠️ Tech Stack
+## 🏆 Capstone Project
 
-| Technology | Purpose |
-|-----------|---------|
-| [React 19](https://react.dev/) | UI framework |
-| [Vite 7](https://vitejs.dev/) | Build tool & dev server |
-| [TypeScript 5](https://www.typescriptlang.org/) | Type safety |
-| [Tailwind CSS 4](https://tailwindcss.com/) | Utility-first styling |
-| [Framer Motion](https://www.framer.com/motion/) | Scroll-triggered animations |
-| [Lucide React](https://lucide.dev/) | Icon library |
+### 🏨 Hotel Network Infrastructure *(DEPI Graduation Project)*
 
----
+Designed and implemented a complete enterprise network infrastructure for a hotel environment, focusing on performance, security, and scalability.
 
-## 📦 Deployment
+**Technologies Used:**
+`VLANs` · `OSPF` · `EIGRP` · `ACLs` · `DHCP` · `SSH` · `HSRP` · `VPN` · `PAT` · `Port Channels`
 
-This is a **static SPA** — deploy to any static hosting provider:
+**Key Implementations:**
+- ✅ VLAN segmentation for department isolation and improved broadcast efficiency
+- ✅ Router-on-a-Stick and Inter-VLAN routing for controlled communication
+- ✅ DHCP server setup on routers and multilayer switches
+- ✅ Security hardening with SSH, switchport security, and ACLs
+- ✅ Dynamic routing using OSPF, EIGRP, and route redistribution
+- ✅ PAT for internet access with a single public IP
+- ✅ VPN site-to-site tunnel for secure remote access
+- ✅ HSRP and Port Channels for network redundancy and high availability
 
-### GitHub Pages
-```bash
-npm run build
-# Deploy the `dist/` folder
-```
-
-### Netlify
-```bash
-# Build command: npm run build
-# Publish directory: dist
-```
-
-### Vercel
-```bash
-# Framework: Vite
-# Output directory: dist
-```
+**Result:** 99.9% uptime in lab, sub-second failover, encrypted branch link, hardened management plane.
 
 ---
 
-## 📬 Contact
+## 🌍 Languages
 
-- **Email:** marwansaad12@gmail.com
-- **Phone:** +201148649274
-- **LinkedIn:** [linkedin.com/in/marwan-saad-35b5012a5](https://www.linkedin.com/in/marwan-saad-35b5012a5)
-- **Location:** Giza, Egypt
+| Language | Level |
+|----------|-------|
+| 🇸🇦 Arabic | Native |
+| 🇬🇧 English | Intermediate (B2) |
 
 ---
 
 <div align="center">
 
-**Built with 💻 and ☕ by Marwan Saad**
+### 📬 Let's Connect
 
-*Designing, securing, and optimizing enterprise networks — one packet at a time.*
+I'm actively seeking opportunities in **Network Security**, **SOC Operations**, and **Network Engineering**.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Marwan_Saad-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marwan-saad-35b5012a5)
+[![Email](https://img.shields.io/badge/Email-Get_In_Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marwansaad12@gmail.com)
 
 </div>
